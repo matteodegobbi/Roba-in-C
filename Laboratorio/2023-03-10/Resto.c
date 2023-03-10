@@ -19,7 +19,8 @@ IP divisore Divisore della divisione. > 0.
 OR Resto della divisione.
 */
 int resto(dividendo, divisore) {
-    return dividendo - divisore * dividendo / divisore;
+  int quoziente = dividendo/divisore;
+  return dividendo-quoziente*divisore;;
     /* I caratteri + - * / (quando compaiono tra due numeri) indicano le
     quattro operazioni aritmetiche fondamentali.
     Il / applicato su due interi calcola il quoziente arrotondato per difetto.
@@ -34,7 +35,7 @@ int main(void) {
     int nCara, nBambini;
     /* Definisce le variabili intere $nCara, $nBambini. */
 
-    autore(); /* Invoca (cioe` esegue) la funzione $autore. */
+    /*autore();  Invoca (cioe` esegue) la funzione $autore. */
 
     nCara = scanInt("N. di caramelle: ");
     /* Invoca la funzione $scanInt.
@@ -52,7 +53,7 @@ int main(void) {
     %d significa "stampa in formato decimale".
     */
 
-    autore(); /* Invoca la funzione $autore una seconda volta. */
+    /*autore();  Invoca la funzione $autore una seconda volta. */
     return 0;
 } /* main */
 /* Qua finisce la funzione $main. */

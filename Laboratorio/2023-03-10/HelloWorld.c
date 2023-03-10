@@ -3,21 +3,22 @@ ED ERRORI IN PRECOMPILAZIONE, IN COMPILAZIONE E IN LINKING.
 Il nome del file (in questo caso, HelloWorld) deve essere evocativo.
 */
 
-#include stdio.h
+#include <stdio.h>
 /* Consente al programma di leggere dati da tastiera e di stamparli su video. */
 
-int mai(void) {
+int main(void) {
+    /*int resto;  Definisce la variabile intera $resto. */
+
     /* Qua inizia il metodo $main, che e` il punto di partenza
     dell'esecuzione del programma.
     */
 
-    printf("Hello, world!\n")
+    printf("Hello, world!\n");
     /* Stampa su video i caratteri contenuti tra la coppia di "";
     inoltre, la presenza di '\n' (che significa newline) sposta il cursore di
     scrittura del video nella linea successiva.
     */
 
-    int resto; /* Definisce la variabile intera $resto. */
 
     printf("Questo programma e` stato scritto da Anna Rossi.\n");
     /* Stampa su video i caratteri contenuti tra la coppia di "";
