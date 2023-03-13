@@ -57,6 +57,18 @@ void destroyTree(struct node* root){
     }
     free(root);
 }
+/*Printa tutto l'albero in preorder*/
+void printTree(struct node* nodo){
+    printf("%d ",nodo->data);
+    if (nodo->left!=NULL)
+    {
+        printTree(nodo->left);
+    }
+    if (nodo->right!=NULL)
+    {
+        printTree(nodo->right);
+    }
+}
 
 int main()
 {
@@ -67,6 +79,7 @@ int main()
     radice->left->right->right = createNode(19);
     int h = height(radice);
     printf("%d\n", h);
+    printTree(radice);
     destroyTree(radice);
     return 0;
 }
